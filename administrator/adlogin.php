@@ -18,7 +18,7 @@
     <div class="justify-content-center" id="main-section">
         <div class="card col-5" id="login-card">
             <div class="card-body">
-                <form class="row g-3" method="post">
+                <form class="row g-3" method="post" action="../functions/validate_admin.php">
                     <h3>Admin Log in</h3>
                     <div class="row">
                     <div class="col-12">

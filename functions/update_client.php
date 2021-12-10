@@ -11,6 +11,7 @@
     }
 
     if(isset($_POST)){
+        console_log($_POST);
         $id = $_POST['id'];
         $name = $_POST['name'];
         $gender = $_POST['gender'];
@@ -19,12 +20,12 @@
         $telephone = $_POST['telephone'];
         $appointment_time = $_POST['appointment_time'];
     } 
-    console_log($_POST)
+    console_log($_POST);
     
     $res = updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time);
 
     if($res){
-        header("location: ".(dirname(__FILE__)).'/../display.php');
+        header('location: ../display.php', true);
     }else{
         console_log("Not working");
     }

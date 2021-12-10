@@ -61,6 +61,11 @@ class User extends db_connection{
         // run query
         return $this->db_query($sql);
     }
+
+    public function verify_email($email){
+        $sql = "SELECT * FROM `username` WHERE `email`='$email'";
+        return $this->db_query($sql);
+    }
 }
 
     // public function createclient($breed){

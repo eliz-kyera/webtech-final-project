@@ -8,17 +8,18 @@
             $js_code = '<script>' . $js_code . '</script>';
         }
         echo $js_code;
+
     }
 
-    if(isset($_POST)){
-        $id = $_POST['id'];
-        $name = $_POST['name'];
-        $gender = $_POST['gender'];
-        $email = $_POST['name'];
-        $breed = $_POST['breed'];
-        $telephone = $_POST['telephone'];
-        $appointment_time = $_POST['appointment_time'];
-    } 
+    // if(isset($_POST)){
+    //     $id = $_POST['id'];
+    //     $name = $_POST['name'];
+    //     $gender = $_POST['gender'];
+    //     $email = $_POST['name'];
+    //     $breed = $_POST['breed'];
+    //     $telephone = $_POST['telephone'];
+    //     $appointment_time = $_POST['appointment_time'];
+    // } 
     if(isset($_GET['id'])){
         console_log($_GET['id']);
         $client = (getSingleClient($_GET['id']));
@@ -37,7 +38,7 @@
     $res = deleteClient($id);
 
     if($res){
-        header("location: ../display.php");
+        header("location: ../../display.php", true);
     }else{
         console_log("Not working");
     }

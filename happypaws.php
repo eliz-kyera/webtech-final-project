@@ -31,7 +31,7 @@
           <a href="#aboutus">About Us</a>
           <a href="#service">Services</a>
           <a href="#contact">Appointment</a>
-          
+          <a href="administrator\adlogin.php">Admin</a>
           <a href="#footer">Contact</a>
           
         </div>
