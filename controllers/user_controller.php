@@ -82,12 +82,12 @@ function book_new_user($name, $telephone, $email, $gender, $breed, $appointment_
     }
 }
 
-function verify_email_fxn($email){
+function verifyUser($email, $password){
     // create a new instance of user object
     $user = new User;
 
     // run the query
-    $run_query = $user->verify_email($email);
+    $run_query = $user->verifyUser($email,$password);
 
     // if successful
     if($run_query){

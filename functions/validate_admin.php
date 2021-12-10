@@ -15,5 +15,10 @@
         $password = $_POST['password'];
     }
 
-    $output = validateAdmin($email, $password);
+    $output = verifyUser($email, $password);
+    if($output){
+        header('location: ../display.php');
+    }else{
+        header('location: ../administrator/adlogin.php');
+    }
 ?>
