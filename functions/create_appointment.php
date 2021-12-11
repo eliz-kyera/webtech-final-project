@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     // create post if not empty
     $newPost = book_new_user($name, $telephone, $email, $gender, $breed, $appointment_time, $appointment_date, $pet_name);
     if($newPost){
-        echo '<script>alert("You have successfully booked your appointment"); setTimeout(()=>{window.location.href=`http://localhost/WebTech%20Final%20Project/happypaws.php`},5000) </script>';
+        echo '<script>alert("You have successfully booked your appointment"); setTimeout(()=>{window.location.href=`../happypaws.php`},1000) </script>';
 
     }else{
         echo(book_new_user($name, $telephone, $email, $gender, $breed, $appointment_time, $appointment_date, $pet_name));
