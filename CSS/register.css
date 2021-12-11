@@ -1,19 +1,19 @@
-#login-card{
-    margin: 10% auto;
-    border-color: rgb(3, 46, 71);
+#login-card {
+  margin: 10% auto;
+  border-color: rgb(3, 46, 71);
 
-    background-color: rgba(247, 231, 188, 0.699);
+  background-color: rgba(247, 231, 188, 0.699);
 }
 
-#button1{
-    text-align: center;
+#button1 {
+  text-align: center;
 }
-p{
-    color: rgb(0, 0, 0);
+p {
+  color: rgb(0, 0, 0);
 }
 
 body {
-    background-image: url("https://ichef.bbci.co.uk/images/ic/1200x675/p08j8hmv.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../video/ac27708af7e5dedce9830287ffbb3ec4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
