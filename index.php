@@ -350,7 +350,7 @@
                 <p>happypaws@gmail.com</p>
             </div>
             <div class="flex-item-right">
-                <form method="post" action="functions/create_appointment.php">
+                <form method="post" action="./functions/create_appointment.php">
                     <input type="text" name="name" id="fname" placeholder="Full Name" required>
                     
                     <input type="email" class="form-input" name="email" id="mail" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
