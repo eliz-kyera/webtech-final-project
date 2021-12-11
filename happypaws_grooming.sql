@@ -93,7 +93,7 @@ INSERT INTO `breed` (`breed_id`, `breed`) VALUES
 --
 
 CREATE TABLE if not exists `customer` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `telephone` varchar(20) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -108,10 +108,10 @@ CREATE TABLE if not exists `customer` (
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`id`, `name`, `telephone`, `email`, `gender`, `breed`, `appointment_time`, `appointment_date`, `pet_name`) VALUES
-(1, 'Shirley', '0223231212', 'shirley.yankyera@ashesi.edu.gh', 'female', 'Chihuahua', '00:00:03', '2021-12-22', 'Dixie'),
-(2, 'Kwaku', '0293839382', 'Kwaku', '', 'German shepherd', '00:00:04', '2021-12-22', 'Simba'),
-(12, 'Papa Joe', '02923932932', 'papa@gmail.com', 'male', 'Pitbull', '00:00:04', '2021-12-16', 'Henry');
+INSERT INTO `customer` (`name`, `telephone`, `email`, `gender`, `breed`, `appointment_time`, `appointment_date`, `pet_name`) VALUES
+('Shirley', '0223231212', 'shirley.yankyera@ashesi.edu.gh', 'female', 'Chihuahua', '00:00:03', '2021-12-22', 'Dixie'),
+('Kwaku', '0293839382', 'Kwaku', '', 'German shepherd', '00:00:04', '2021-12-22', 'Simba'),
+('Papa Joe', '02923932932', 'papa@gmail.com', 'male', 'Pitbull', '00:00:04', '2021-12-16', 'Henry');
 
 -- --------------------------------------------------------
 
