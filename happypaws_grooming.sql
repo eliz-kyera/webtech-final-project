@@ -93,7 +93,7 @@ INSERT INTO `breed` (`breed_id`, `breed`) VALUES
 --
 
 CREATE TABLE if not exists `customer` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `telephone` varchar(20) NOT NULL,
   `email` varchar(100) NOT NULL,
