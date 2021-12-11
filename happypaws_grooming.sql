@@ -584,8 +584,6 @@ ALTER TABLE `breed`
 --
 -- Indexes for table `customer`
 --
-ALTER TABLE `customer`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `employee`
