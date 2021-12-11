@@ -10,22 +10,32 @@
         echo $js_code;
     }
 
-    if(isset($_POST)){
+    if(isset($_POST['submit'])){
         $id = $_POST['id'];
         $name = $_POST['name'];
         $gender = $_POST['gender'];
-        $email = $_POST['name'];
+        $email = $_POST['email'];
         $breed = $_POST['breed'];
         $telephone = $_POST['telephone'];
         $appointment_time = $_POST['appointment_time'];
+        $appointment_date = $_POST['appointment_date'];
+
+        // echo $id ."  ";
+        // echo $name ."  ";
+        // echo $gender ."  ";
+        // echo $email ."  ";
+        // echo $breed ."  ";
+        // echo $telephone ."  ";
+        // echo $appointment_time ."  ";
+        // echo $appointment_date ."  ";
+        
+        $res = updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time,$appointment_date);
+        
+        if($res){
+            header('location: ../display.php', true);
+        }else{
+            console_log("Not working");
+        }
     } 
-    
-    $res = updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time);
-
-    if($res){
-        header('location: ../display.php', true);
-    }else{
-        console_log("Not working");
-    }
-
+        
 ?>

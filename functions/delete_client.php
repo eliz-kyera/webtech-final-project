@@ -32,15 +32,15 @@
         $appointment_time = $client['appointment_time'];
         $appointment_date = $client['appointment_date'];
         $pet_name = $client['pet_name'];
-    }
-    console_log($_POST);
-    
-    $res = deleteClient($id);
-
-    if($res){
-        header("location: ../../display.php", true);
-    }else{
-        console_log("Not working");
+        console_log($_POST);
+        
+        $res = deleteClient($id);
+        
+        if($res){
+            header("location: ../display.php", true);
+        }else{
+            console_log("Not working");
+        }
     }
 
 ?>

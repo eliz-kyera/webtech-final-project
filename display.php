@@ -73,12 +73,12 @@ $result = getClients();
                               <?= $value['pet_name'] ?>
                             </td>
                             <td>
-                              <a href="admin.php/?id=<?= $value['id'] ?>">
+                              <a href="admin.php?id=<?= $value['id'] ?>">
                                 <button name="update" class="btn btn-primary">Update</button>
                               </a>
                             </td>
                             <td>
-                              <a href="functions/delete_client.php/?id=<?= $value['id'] ?>">
+                              <a href="./functions/delete_client.php?id=<?= $value['id'] ?>">
                                 <button type="submit" name="delete" class="btn btn-warning">Delete</button>
                               </a>
                             </td>

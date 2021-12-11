@@ -13,8 +13,8 @@ class User extends db_connection{
         return $this->db_query($sql);
     }
 
-    public function updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time){
-        $sql = "UPDATE `customer` SET `name`='$name', `gender`='$gender', `email`='$email', `breed`='$breed', `telephone`='$telephone', `appointment_time`='$appointment_time' WHERE `id`='$id'";
+    public function updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time,$appointment_date){
+        $sql = "UPDATE `customer` SET `name`='$name', `gender`='$gender', `email`='$email', `breed`='$breed', `telephone`='$telephone', `appointment_time`='$appointment_time', `appointment_date`='$appointment_date' WHERE `id`='$id'";
 
         // run query
         return $this->db_query($sql);
@@ -28,7 +28,7 @@ class User extends db_connection{
     }
 
     public function updateAppointmentDate($id, $date){
-        $sql = "UPDATE `customer` SET `appointment_date`='$time' WHERE `id`='$id'";
+        $sql = "UPDATE `customer` SET `appointment_date`='$date' WHERE `id`='$id'";
 
         // run query
         return $this->db_query($sql);

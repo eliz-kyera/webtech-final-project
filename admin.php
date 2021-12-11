@@ -47,7 +47,7 @@ include_once (dirname(__FILE__)).'/./controllers/user_controller.php';
 
 <div class="card col-5" id="login-card">
     <div class="card-body">
-        <form class="row g-3" method="post" action="../functions/update_client.php">
+        <form class="row g-3" method="post" action="./functions/update_client.php">
         <?php
         function console_log($output, $with_script_tags = true) {
             $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
@@ -124,14 +124,14 @@ include_once (dirname(__FILE__)).'/./controllers/user_controller.php';
             </div>
             <div class="col-md-10">
                 <label for="date" class="form-label">date</label>
-                <input type="text" value="<?= $appointment_date ?>" name="date" class="form-control" id="date">
+                <input type="text" value="<?= $appointment_date ?>" name="appointment_date" class="form-control" id="date">
             </div>
             <div class="col-md-10">
                 <label for="petName" class="form-label">petName</label>
                 <input type="text" value="<?= $pet_name ?>" name="petName" class="form-control" id="petName">
             </div>
             <div class="d-grip gap-1 d-md-flex justify-content-md-end ">
-                <input type= "submit" class="btn btn-primary" value="Update" name = "submit">
+                <button type= "submit" class="btn btn-primary" value="" name ="submit">Update</button>
             </div>
     </div>
     </label>

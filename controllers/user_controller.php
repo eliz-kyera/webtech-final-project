@@ -21,7 +21,7 @@ function getClients(){
 
 function getSingleClient($id){
     // Create new post object
-    $user = new User;
+    $user = new User();
 
     // Run query
     $runQuery = $user->getSingleClient($id);
@@ -40,11 +40,11 @@ function getSingleClient($id){
     }
 }
 
-function updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time){
-    $user = new User;
+function updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time,$appointment_date){
+    $user = new User();
 
     // Run query
-    $runQuery = $user->updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time);
+    $runQuery = $user->updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_time,$appointment_date);
 
     if($runQuery){
         return $runQuery;
@@ -55,7 +55,7 @@ function updateClient($id,$name,$gender,$email,$breed,$telephone,$appointment_ti
 
 function deleteClient($id){
     // Create new post object
-    $user = new User;
+    $user = new User();
 
     // Run query
     $runQuery = $user->deleteClient($id);
@@ -69,7 +69,7 @@ function deleteClient($id){
 
 function book_new_user($name, $telephone, $email, $gender, $breed, $appointment_time, $appointment_date, $pet_name){
     // create a new instance of user object
-    $user = new User;
+    $user = new User();
 
     // run the query
     $run_query = $user->createclient($name, $telephone, $email, $gender, $breed, $appointment_time, $appointment_date, $pet_name);
@@ -84,7 +84,7 @@ function book_new_user($name, $telephone, $email, $gender, $breed, $appointment_
 
 function verifyUser($email, $password){
     // create a new instance of user object
-    $user = new User;
+    $user = new User();
 
     // run the query
     $run_query = $user->verifyUser($email,$password);

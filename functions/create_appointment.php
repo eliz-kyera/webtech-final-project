@@ -13,13 +13,16 @@ if(isset($_POST['submit'])){
     $appointment_date = $_POST['date'];
     $pet_name =  $_POST['petName'];
     
+    // echo "hello";
 
     // create post if not empty
     $newPost = book_new_user($name, $telephone, $email, $gender, $breed, $appointment_time, $appointment_date, $pet_name);
     if($newPost){
         echo '<script>alert("You have successfully booked your appointment"); setTimeout(()=>{window.location.href=`../index.php`},1000) </script>';
 
-    }else{
-        echo(book_new_user($name, $telephone, $email, $gender, $breed, $appointment_time, $appointment_date, $pet_name));
+    }
+    else{
+        echo "failed";
+        // echo(book_new_user($name, $telephone, $email, $gender, $breed, $appointment_time, $appointment_date, $pet_name));
     }
 }
