@@ -13,12 +13,16 @@
     if(isset($_POST['login'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
+
+        if($email=="shirley.yankyera@gmail.com" && $password=="12435"){
+            header('location: ../display.php');
+        }else{
+            header('location: ../administrator/adlogin.php');
+        }
+    } else {
+        echo "failed";
     }
 
     
-    if($email=="shirley.yankyera@gmail.com" && $password=="12435"){
-        header('location: ../display.php');
-    }else{
-        header('location: ../administrator/adlogin.php');
-    }
+    
 ?>
