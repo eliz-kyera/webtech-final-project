@@ -31,7 +31,7 @@
           <a href="#aboutus">About Us</a>
           <a href="#service">Services</a>
           <a href="#contact">Appointment</a>
-          <a href="administrator\adlogin.php">Admin</a>
+          <a href="administrator\adlogin.php" target="_blank">Admin</a>
           <a href="#footer">Contact</a>
           
         </div>
@@ -195,48 +195,38 @@
 
  <!-- Team -->
     <section id="Team">
+      <h1>OUR TEAM</h1>
       <div class="container">
-        <h1>OUR TEAM</h1>
-        <div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="video\pexels-photo-8452045.jpeg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO &amp; Founder</p>
-        
-        <p>Jane@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="video\pexels-photo-8452045.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jane Doe</h5>
+                <p class="card-text">CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="video\pexels-photo-2811087.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lily Ross</h5>
+                <p class="card-text">Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="video\pexels-photo-2379004.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Isaac Newton</h5>
+                <p class="card-text">Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="video\pexels-photo-2811087.jpeg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>LilyRoss</h2>
-        <p class="title">Director</p>
-        
-        <p>Lily@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="video\pexels-photo-2379004.jpeg" alt="John" style="width:100%">
-      <div class="container">
-        <h2> Isacc Newton</h2>
-        <p class="title">Manager</p>
-        
-        <p>Isaac@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
     </section>
 
     <!-- Gallery -->

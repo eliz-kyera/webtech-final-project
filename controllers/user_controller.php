@@ -95,9 +95,9 @@ function verifyUser($email, $password){
         $user_email = $user->db_fetch();
         if(empty($user_email)){
             // if empty means the email isn't in the database already
-            return true;
-        }else{
             return false;
+        }else{
+            return true;
         }
     }else{
         return false;

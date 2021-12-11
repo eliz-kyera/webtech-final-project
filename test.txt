@@ -1,0 +1,50 @@
+<div class="row align-items-center">
+          <div class="col">
+            <div class="card">
+              <img src="video\pexels-photo-8452045.jpeg" alt="Jane" style="width:250px; height:250px;">
+              <div class="container">
+                <h2>Jane Doe</h2>
+                <p class="title">CEO &amp; Founder</p>
+                
+                <p>Jane@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="video\pexels-photo-2811087.jpeg" alt="Mike" style="width:250px; height:250px;">
+              <div class="container">
+                <h2>LilyRoss</h2>
+                <p class="title">Director</p>
+                
+                <p>Lily@example.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="video\pexels-photo-2379004.jpeg" alt="John" style="width:250px; height:250px;">
+              <div class="container">
+                <h2> Isacc Newton</h2>
+                <p class="title">Manager</p>
+                
+                <p>Isaac@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  resize: both;
+  overflow: auto;
+  width: 500px;
+  height: 550px;
+}

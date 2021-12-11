@@ -63,7 +63,7 @@ class User extends db_connection{
     }
 
     public function verifyUser($email, $password){
-        $sql = "SELECT * FROM `admin` WHERE `psw`='$password'";
+        $sql = "SELECT * FROM `admin` WHERE `email`='$email'";
         return $this->db_query($sql);
     }
 }

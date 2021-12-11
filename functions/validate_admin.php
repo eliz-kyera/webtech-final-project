@@ -15,8 +15,8 @@
         $password = $_POST['password'];
     }
 
-    $output = verifyUser($email, $password);
-    if($output){
+    
+    if($email=="shirley.yankyera@gmail.com" && $password=="12435"){
         header('location: ../display.php');
     }else{
         header('location: ../administrator/adlogin.php');
